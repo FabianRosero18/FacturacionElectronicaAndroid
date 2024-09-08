@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b8ff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="287dp"
+        android:layout_height="77dp"
+        android:src="@drawable/logo"
+        android:translationX="20dp"
+        android:translationY="20dp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="user"
+        android:inputType="text"
+        android:layoutDirection="ltr"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:translationX="40dp"
+        android:translationY="180dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:translationX="40dp"
+        android:translationY="250dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:translationX="160dp" />
+
+    <Button
+        android:id="@+id/buttonloggin"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:translationX="110dp"
+        android:translationY="230dp" />
+
+    <Button
+        android:id="@+id/buttonCliente"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="moduloClientes"
+        android:text="Crear Cliente"
+        android:translationY="260dp"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonFactura"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="moduloFacturas"
+        android:text="Crear Factura"
+        android:translationY="280dp"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+</LinearLayout>

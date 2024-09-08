@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#33b8ff"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="305dp"
+        android:layout_height="149dp"
+        android:breakStrategy="high_quality"
+        android:text="FACTURA CREADA Y GUARDADA EN BASE DE DATOS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="294dp"
+        android:layout_height="85dp"
+        android:breakStrategy="high_quality"
+        android:text="Vista de factura electronica no disponible para proyecto estudiantil"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/cliente"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:onClick="moduloCliente"
+        android:text="Modulo Clientes" />
+
+    <Button
+        android:id="@+id/factura"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:onClick="moduloFactura"
+        android:text="Modulo Facturas" />
+
+
+
+</LinearLayout>

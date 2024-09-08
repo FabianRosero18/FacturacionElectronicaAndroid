@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b8ff"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/LOGO"
+            android:layout_width="287dp"
+            android:layout_height="77dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear factura"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp" />
+
+        <EditText
+            android:id="@+id/idCliente"
+            android:layout_width="326dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="ID cliente a facturar"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/fechaRealz"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="fecha de realizacion"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/buttonRealz"
+            android:layout_width="62dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-55dp"
+            android:drawableBottom="@drawable/calendar"
+            android:onClick="fechaRealizacionDatePicker" />
+
+        <EditText
+            android:id="@+id/fechaVenc"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="fecha de vencimiento"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/buttonVenc"
+            android:layout_width="62dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-55dp"
+            android:drawableBottom="@drawable/calendar"
+            android:onClick="fechaVencimientoDatePicker" />
+
+        <EditText
+            android:id="@+id/ordenCompra"
+            android:layout_width="326dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Orden de compra"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/remision"
+            android:layout_width="326dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Remision"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/observaciones"
+            android:layout_width="326dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Observaciones"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/buttonItems"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Insertar Items"
+            android:onClick="guardarFactura"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
